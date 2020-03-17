@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculate with vue.js</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/calculate.css">
+	<script type="text/javascript" src="../vue.js"></script>
+</head>
+<body>
+	<h2>Input expression using equal symbol as end.</h2>
+	<form name="calc" class="calc">
+		<input type="text" name="txt" readonly="" class="txt" v-model="value">
+		<num v-for="item in items" :key="item.id" :item="item" @enter="enter(item.id)" class="num"></num>
+	</form>
+
+
+	<script type="text/javascript" src="js/calculate.js"></script>
+</body>
+</html>
